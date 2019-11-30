@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+<style>
+fieldset{
+	width:600px;
+	padding:20px;
+	margin-bottom:25px;
+}
+[type="text"]{
+	width:140px;
+	height:20px;
+}
+[type="texta"]{
+	width:80px;
+	height:20px;
+	}
+[type="textb"]{
+	width:400px;
+	height:20px;
+}
+#zy{
+	margin:auto;
+	background-color:#333;
+	color:#FFF;
+	width:649px;
+	height:650px;
+}
+h2,p{
+	text-align:center;
+}
+select{
+	width:180px;
+	height:20px;
+}
+	
+</style>
+</head>
+
+<body>
+<div id="zy">
+<form>
+<h2>增加快递信息</h2>
+<fieldset>
+    <legend>发货单</legend>
+    <table>
+    <tbody>
+    <tr>
+    <td class="first">发货人：</td>
+    <td class="second"><input type="text"></td>
+    <td class="first">地址：</td>
+    <td class="second"><input type="text"></td>
+    </tr>
+    <tr>
+    <td class="first">电话：</td>
+    <td class="second"><input type="text"></td>
+    <td class="first">邮编：</td>
+    <td class="second"><input type="text"></td>
+    </tr>
+    </tbody>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>收货单</legend>
+    <table>
+    <tbody>
+    <tr>
+    <td class="first">发货人：</td>
+    <td class="second"><input type="text"></td>
+    <td class="first">地址：</td>
+    <td class="second"><input type="text"></td>
+    </tr>
+    <tr>
+    <td class="first">电话：</td>
+    <td class="second"><input type="text"></td>
+    <td class="first">邮编：</td>
+    <td class="second"><input type="text"></td>
+    </tr>
+    <tr>
+    <td class="first" >地区：</td>
+    <td colspan="3" class="second" >
+    <select>
+    <option>北京</option>
+    <option>上海</option>
+    <option>杭州</option>
+    </select>
+   </td>
+    </tr>
+    <tr>
+     <td class="first">包装：</td>
+    <td class="second">
+    <input type="checkbox" id="a">
+    <label for ="a">纸箱</label>
+    <input type="checkbox" id="a">
+    <label for ="a">木箱</label>
+    <input type="checkbox" id="a">
+    <label for ="a">快递袋</label>
+    <input type="checkbox" id="a">
+    <label for ="a">其他</label>
+    </td>
+    </tr>
+    <tr>
+     <td class="first">付款方式：</td>
+    <td class="second">
+    <input type="radio" id="b">
+    <label for ="b">现金</label>
+    <input type="radio" id="b">
+    <label for ="b">支付宝</label>
+    <input type="radio" id="b">
+    <label for ="b">网银</label>
+    <input type="radio" id="b">
+    <label for ="b">ATM</label>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+ </fieldset>
+ 
+ <fieldset>
+    <legend>货物信息</legend>
+    <table>
+    <tbody>
+    <tr>
+    <td class="first" >货物名称：</td>
+    <td colspan="5"><input type="textb"></td>
+    </tr>
+     <tr>
+    <td class="first">数量：</td>
+    <td class="second"><input type="texta"></td>
+    <td class="first">重量：</td>
+    <td class="second"><input type="texta"></td>
+    <td class="first">发货时间：</td>
+    <td class="second"><input type="texta"></td>
+    </tr>
+    </tbody>
+    </table>
+    </fieldset>
+   <p>
+<input type="submit"value="确定" >
+<input type="submit"value="取消" >
+</p>
+
+
+
+
+
+</form>
+</div>
+</body>
+</html>
